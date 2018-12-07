@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <fancy-heading title="Hello, Vue!" color="red"/>
+    <todo-list/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import FancyHeading from "./components/FancyHeading.vue";
+import TodoList from "./components/TodoList.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    FancyHeading,
+    TodoList
   }
 };
 </script>
